@@ -20,7 +20,7 @@ session_start();
     <div class="container my-3">
         <h4 class='fw-bold'>Leave statements of all employees</h4>
         <div class="my-3 container-fluid table-responsive">
-            <table id="table_id" class="table-bordered w-100">
+            <table id="table_id" class="table-bordered w-100 text-center">
                 <tr>
                     <td colspan='8' class='text-center fw-bold'>
                         <h5></h5><?php echo $section ?> Section Khyberpass Depot</h5>

@@ -18,7 +18,7 @@
 
 <body>
     <div class="container my-3 mx-5">
-        <h4>Go to Absentee data of below sections</h4><br>
+        <h4>Go to Absentee data of following sections</h4><br>
         <?php
         foreach (glob('./*', GLOB_ONLYDIR) as $dir) {
             $dirname = basename($dir);

@@ -38,7 +38,7 @@ session_start();
                 <b>ESS Screenshot</b>
                 <?php
                 echo "<a href='$section/uploads/$file_path' target='_blank'>(Open file)</a>";
-                echo "<img src='$section/uploads/$file_path'  alt='ESS Screenshot'>";
+                echo "<img src='$section/uploads/$file_path' style='width: 1080px'  alt='ESS Screenshot'>";
                 ?>
 
                 <div class="my-3">

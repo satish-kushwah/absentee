@@ -27,7 +27,7 @@ if (!isset($_SESSION[$section . 'loggedin'])) {
                 <a href="sample.json" target='_blank'>View sample json file</a>
                 <?php
                 $employees = file_get_contents("$section/employees.json");
-                echo "<textarea class='form-control ' name='edit_employees' id='edit_employees' cols='30' rows='30'>$employees</textarea>";
+                echo "<textarea class='form-control ' name='edit_employees' id='edit_employees' cols='30' rows='15'>$employees</textarea>";
                 ?>
             </div>
             <button type='submit' class='btn btn-primary' onclick="return confirm('Make sure employees data is in proper json format')">Submit</button>

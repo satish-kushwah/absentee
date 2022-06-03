@@ -76,7 +76,7 @@ $section = $_GET['section'];
                     </tbody>
                 </table>
                 <input type='text' name='total_rows' id='total_rows' value='1' hidden>
-                <buttton class="btn btn-info" id='add_row'>Add Row</buttton>
+                <buttton class="btn btn-info btn-sm" id='add_row'>Add Row</buttton>
                 <script>
                     var row = 1;
                     $("#add_row").click(function() {
@@ -107,7 +107,7 @@ $section = $_GET['section'];
                 </script>
             </div>
             <div class='mb-3'>
-                <label for='fileToUpload' class='form-label float-start'>Upload ESS Screenshot</label>
+                <label for='fileToUpload' class='form-label float-start'>Upload ESS Screenshot (please upload cropped image showing your name and applied leaves only) <a target='_blank' href='sample.jpg'>View Sample</a></label>
                 <input type='file' class='form-control' id='fileToUpload' name='fileToUpload' required>
             </div>
             <button type='submit' class='btn btn-primary' onclick="return confirm('Sure to submit?')">Submit</button>

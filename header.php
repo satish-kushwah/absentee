@@ -1,6 +1,6 @@
 <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
     <div class='container-fluid'>
-        <a class='navbar-brand active ' href='fill_leaves.php?section=<?php echo $section ?>'>Leave Statements</a>
+        <a class='navbar-brand active ' href='./index.php'>Absentee</a>
         <!-- <img src='images/logo.png' alt='BrandName' width='30' height='30'> -->
         <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span class='navbar-toggler-icon'></span>

@@ -17,21 +17,26 @@
 </head>
 
 <body>
-    <div class="container my-3 mx-5">
+    <div class="container my-3  text-center ">
         <h4>Go to Absentee data of following sections</h4><br>
-        <?php
-        foreach (glob('./*', GLOB_ONLYDIR) as $dir) {
-            $dirname = basename($dir);
-            echo "<a href='fill_leaves.php?section=$dirname' class='mb-3 btn btn-primary'>$dirname</a><br>";
-        }
-        // $path    = './';
-        // $files = scandir($path);
-        // $files = array_diff(scandir($path), array('.', '..', 'index.php'));
-        // foreach ($files as $file) {
-        //     $fileUpper = strtoupper($file);
-        //     echo "<a href='$file' class='mb-3 btn btn-primary'>$fileUpper</a><br>";
-        // }
-        ?>
+        <center>
+            <div class="container col-xs-8 col-md-3">
+                <?php
+                foreach (glob('./*', GLOB_ONLYDIR) as $dir) {
+                    $dirname = basename($dir);
+                    $displayDir = strtoupper(($dirname));
+                    echo "<a href='fill_leaves.php?section=$dirname' class='mb-3 btn btn-outline-primary w-100'>$displayDir</a><br>";
+                }
+                // $path    = './';
+                // $files = scandir($path);
+                // $files = array_diff(scandir($path), array('.', '..', 'index.php'));
+                // foreach ($files as $file) {
+                //     $fileUpper = strtoupper($file);
+                //     echo "<a href='$file' class='mb-3 btn btn-primary'>$fileUpper</a><br>";
+                // }
+                ?>
+            </div>
+        </center>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
